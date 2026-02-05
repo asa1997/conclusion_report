@@ -977,16 +977,26 @@
         const data = {
   "nodes": [
     {
+      "id": "cryptography-agent.py",
+      "label": "Cryptography (2)",
+      "type": "service",
+      "riskLevel": "medium",
+      "threats": [],
+      "findings": [],
+      "description": "2 assets across 1 files",
+      "technology": ""
+    },
+    {
       "id": "api-agent.py",
       "label": "API Endpoints (9)",
       "type": "api",
       "riskLevel": "medium",
       "threats": [
-        "code-threat-api-agent.py-18-1770282213"
+        "code-threat-api-agent.py-18-1770283059"
       ],
       "findings": [
         {
-          "id": "code-threat-api-agent.py-18-1770282213",
+          "id": "code-threat-api-agent.py-18-1770283059",
           "title": "Unauthenticated API Endpoint",
           "description": "API endpoint 'unknown' at agent.py:19 may lack authentication checks (9 instances across 2 files)",
           "severity": "high",
@@ -1011,11 +1021,11 @@
       "type": "external",
       "riskLevel": "low",
       "threats": [
-        "code-threat-api-agent.py-18-1770282213"
+        "code-threat-api-agent.py-18-1770283059"
       ],
       "findings": [
         {
-          "id": "code-threat-api-agent.py-18-1770282213",
+          "id": "code-threat-api-agent.py-18-1770283059",
           "title": "Unauthenticated API Endpoint",
           "description": "API endpoint 'unknown' at agent.py:19 may lack authentication checks (9 instances across 2 files)",
           "severity": "high",
@@ -1048,16 +1058,6 @@
       "id": "database-agent.py",
       "label": "Database Operations (2)",
       "type": "database",
-      "riskLevel": "medium",
-      "threats": [],
-      "findings": [],
-      "description": "2 assets across 1 files",
-      "technology": ""
-    },
-    {
-      "id": "cryptography-agent.py",
-      "label": "Cryptography (2)",
-      "type": "service",
       "riskLevel": "medium",
       "threats": [],
       "findings": [],
@@ -1152,8 +1152,8 @@
       "id": "boundary-internal",
       "name": "Internal Services",
       "nodes": [
-        "filesystem-agent.py",
-        "cryptography-agent.py"
+        "cryptography-agent.py",
+        "filesystem-agent.py"
       ],
       "color": "#ffd700",
       "zone": "internal"
@@ -1171,7 +1171,7 @@
   "metadata": {
     "title": "Threat Model: https://github.com/asa1997/health_record_demo",
     "description": "Data Flow Diagram with STRIDE-LM and MAESTRO Analysis",
-    "generated": "2026-02-05T09:03:33Z",
+    "generated": "2026-02-05T09:17:39Z",
     "repository": "https://github.com/asa1997/health_record_demo",
     "branch": "main",
     "totalNodes": 5,
